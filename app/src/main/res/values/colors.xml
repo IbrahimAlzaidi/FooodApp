@@ -29,5 +29,6 @@
     <color name="colorPrimary">#6200EA</color>
     <color name="colorPrimaryDark">#5502C8</color>
     <color name="colorAccent">#9D46FF</color>
+    <color name="actionBarBackgroundColor">@color/colorPrimary</color>
 
 </resources>
