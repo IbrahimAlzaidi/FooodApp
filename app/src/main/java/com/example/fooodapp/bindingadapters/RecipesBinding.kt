@@ -2,6 +2,7 @@ package com.example.fooodapp.bindingadapters
 
 import android.view.View
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.databinding.BindingAdapter
 import com.example.fooodapp.data.database.RecipesEntity
@@ -43,6 +44,22 @@ class RecipesBinding {
                 textView.visibility = View.INVISIBLE
             } else if (apiResponse is NetworkResult.Success) {
                 textView.visibility = View.INVISIBLE
+            }
+        }
+
+        @BindingAdapter("readApiResponse3", "readDatabase3", requireAll = true)
+        @JvmStatic
+        fun errorImageViewVisibility2(
+            linearLayout: LinearLayout,
+            apiResponse: NetworkResult<FoodRecipe>?,
+            database: List<RecipesEntity>?
+        ) {
+            if (apiResponse is NetworkResult.Error && database.isNullOrEmpty()) {
+                linearLayout.visibility = View.VISIBLE
+            } else if (apiResponse is NetworkResult.Loading) {
+                linearLayout.visibility = View.INVISIBLE
+            } else if (apiResponse is NetworkResult.Success) {
+                linearLayout.visibility = View.INVISIBLE
             }
         }
 

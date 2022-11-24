@@ -14,6 +14,7 @@ import com.example.fooodapp.ui.fragments.ingredients.IngredientsFragment
 import com.example.fooodapp.ui.fragments.instructions.InstructionsFragment
 import com.example.fooodapp.ui.fragments.overview.OverviewFragment
 import com.example.fooodapp.ui.fragments.recipes.RecipesFragmentDirections
+import com.example.fooodapp.util.Constants
 
 class DetailsActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDetailsBinding
@@ -39,7 +40,7 @@ class DetailsActivity : AppCompatActivity() {
         titles.add("Instructions")
 
         val resultBundle = Bundle()
-        resultBundle.putParcelable("recipeBundle", args.result)
+        resultBundle.putParcelable(Constants.RECIPE_RESULT_KEY, args.result)
 
         val adapter = PagerAdapter(
             resultBundle,

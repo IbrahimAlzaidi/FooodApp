@@ -29,6 +29,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                readApiResponse3="@{mainViewModel.recipeResponse}"
+                readDatabase3="@{mainViewModel.readRecipes}"
                 android:orientation="vertical">
 
                 <include layout="@layout/placeholder_row_layout" />

@@ -15,8 +15,8 @@ data class ExtendedIngredient(
     val image: String? = null,
     @SerializedName("name")
     val name: String? = null,
-    @SerializedName("nameClean")
-    val nameClean: String? = null,
+    @SerializedName("original")
+    val original: String? = null,
     @SerializedName("unit")
     val unit: String? = null
 ): Parcelable
