@@ -1,4 +1,4 @@
-package com.example.fooodapp.data.database
+package com.example.fooodapp.data.database.entities
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
