@@ -1,13 +1,22 @@
 # FooodApp
 Used Tech:
+
 1.View binding.
+
 2.Data binding.
+
 3.Live Data.
+
 4.Room Database.
+
 5.Retrofit Api.
+
 5.Caching Tech.
+
 6.Dependincy Injection.
+
 7.MVVM Arch.
+
 8.Clean Arch using Repository Pattern.
 
 And here is a screenshoot.
